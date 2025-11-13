@@ -16,11 +16,13 @@ nav {
 }
 
 .btnstyle{
-    height: 28px;
+    height: 56px;
+    color:white;
+    font-size:24px;
     text-align: center;
     background-color: #652796;
     border-radius: 3px;
-    border: 2px solid #FFFFFF;
+    border: 4px solid #FFFFFF;
 }
 
 h5 {
