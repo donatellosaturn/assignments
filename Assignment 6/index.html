@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Ludo Mentis - HOME</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+<h2>HTML Form</h2>
+
+<form action="/action_page.php">
+
+  <p>The purpose of this form is to get feedback from YOU, the customer. Please be truthful in your answers. (* = required)</p><br><br>
+  <!-- Part 1 -->
+
+  <label for="fname">NAME*</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+
+  <label for="email">EMAIL*</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="phone">PHONE*</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+  
+  <label for="address">ADDRESS </label>
+  <input type="text" id="address" name="address"><br><br>
+
+  <!-- Part 2 -->
+
+  <h4>Which of the following did you enjoy the most? (Select all that apply)</h4>
+  
+  <div class="row">
+  <div class="column">
+	  <img src="Oculeye.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="oculeye" name="oculeye" value="oculeye">
+	  <label for="oculeye" >Oculeye</label>
+	  </div>
+  <div class="column">
+	  <img src="Tieshimi.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="tieshimi" name="tieshimi" value="tieshimi">
+	  <label for="tieshimi">Tieshimi</label>
+	  </div>
+  <div class="column">
+	  <img src="liquidiron.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="liquidiron" name="liquidiron" value="liquidiron">
+	  <label for="liquidiron">Liquid Iron</label>
+	  </div>
+  </div>
+  
+  <div class="row">
+  <div class="column">
+	  <img src="Idolcake.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="idolcake" name="idolcake" value="idolcake">
+	  <label for="idolcake">Idol Cake</label>
+	  </div>
+  <div class="column">  
+	  <img src="chocolustbar.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="chocolustbar" name="chocolustbar" value="chocolustbar">
+	  <label for="chocolustbar">Chocolust Bar</label>
+	  </div>
+  <div class="column">
+	  <img src="bacony.png" alt="[IMAGE DID NOT LOAD CORRECTLY]"></td><br>
+	  <input type="checkbox" id="bacony" name="bacony" value="bacony">
+	  <label for="bacony">Mr. Bacony</label>
+	  </div>
+  </div>
+  <!-- Part 3 -->
+  <h4>Rate your experience*</h4>
+  <div class="row">
+  
+	<div class="column">
+	  <input type="radio" id="star" name="star" value="1" required>
+	  <label for="1s" class=star> ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star" name="star" value="2" required>
+	  <label for="2s" class=star> ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star" name="star" value="3" required>
+	  <label for="3s" class=star> ★ ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star" name="star" value="4" required>
+	  <label for="4s" class=star> ★ ★ ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star" name="star" value="5" required>
+	  <label for="5s" class=star> ★ ★ ★ ★ ★  &nbsp;</label></div>
+	  
+  </div>
+  
+  <br><br><br>
+  <label for="desc">Describe your experience*</label>
+  <br>
+  <select name="desc" id="desc" required>
+	<option value="">(Select a Value)</option>
+	<option value="en">It was enlightening</option>
+	<option value="fm">I found out more about myself</option>
+	<option value="fn">I had a lot of fun</option>
+	<option value="fd">I enjoyed the food</option>
+	<option value="he">I feel much happier</option>
+	<option value="he">Other / None</option>
+  </select>
+  
+  <br><br><br>
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
