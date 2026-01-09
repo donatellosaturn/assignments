@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Ludo Mentis - FORM</title>
+	<link href="styles.css" rel="stylesheet" type="text/css" media="all"/>
+	<div class="header"><h1><img src="header.png" alt="Text in front of an olive branch"></h1></div>
+	<div class="subheader"><h1>Form</h1></div>
+</head>
+
+<nav>
+	<a href="index.html">Home Page</a>
+	<a href="menu.html">View our Menu!</a>
+	<a href="form.html">Submit a Form!</a>
+	<a href="contactus.html">Contact Us</a>
+	<a href="founder.html">View our Founder!</a>
+</nav>
+
+<body>
+<h2>Submit a Form!</h2>
+
+<form action="/action_page.php">
+
+  <p>The purpose of this form is to get feedback from YOU, the customer. Please be truthful in your answers. (* = required)</p><br><br>
+  <!-- Part 1 -->
+
+  <label for="fname">NAME*</label>
+  <input type="text" id="fname" name="fname" required><br><br>
+
+  <label for="email">EMAIL*</label>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="phone">PHONE*</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+  
+  <label for="address">ADDRESS </label>
+  <input type="text" id="address" name="address"><br><br>
+
+  <!-- Part 2 -->
+
+  <h4>Which of the following did you enjoy the most? (Select all that apply)</h4>
+  
+  <div class="row">
+  <div class="column">
+	  <img src="Oculeye.png" class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="oculeye" name="oculeye" value="oculeye">
+	  <label for="oculeye" >Oculeye</label>
+	  </div>
+  <div class="column">
+	  <img src="Tieshimi.png" class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="tieshimi" name="tieshimi" value="tieshimi">
+	  <label for="tieshimi">Tieshimi</label>
+	  </div>
+  <div class="column">
+	  <img src="LiquidIron.png" class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="liquidiron" name="liquidiron" value="liquidiron">
+	  <label for="liquidiron">Liquid Iron</label>
+	  </div>
+  </div>
+  
+  <div class="row">
+  <div class="column">
+	  <img src="IdolCake.png" class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="idolcake" name="idolcake" value="idolcake">
+	  <label for="idolcake">Idol Cake</label>
+	  </div>
+  <div class="column">  
+	  <img src="ChocolustBar.png"  class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="chocolustbar" name="chocolustbar" value="chocolustbar">
+	  <label for="chocolustbar">Chocolust Bar</label>
+	  </div>
+  <div class="column">
+	  <img src="Bacony.png" class="small" alt="[IMAGE DID NOT LOAD CORRECTLY]"><br>
+	  <input type="checkbox" id="bacony" name="bacony" value="bacony">
+	  <label for="bacony">Mr. Bacony</label>
+	  </div>
+  </div>
+  <!-- Part 3 -->
+  <h4>Rate your experience*</h4>
+  <div class="row">
+  
+	<div class="column">
+	  <input type="radio" id="star1" name="starrate" value="1" required>
+	  <label id="1s" class=star> ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star2" name="starrate" value="2" required>
+	  <label id="2s" class=star> ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star3" name="starrate" value="3" required>
+	  <label id="3s" class=star> ★ ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star4" name="starrate" value="4" required>
+	  <label id="4s" class=star> ★ ★ ★ ★  &nbsp;</label></div>
+	  
+	<div class="column">
+	  <input type="radio" id="star5" name="starrate" value="5" required>
+	  <label id="5s" class=star> ★ ★ ★ ★ ★  &nbsp;</label></div>
+	  
+  </div>
+  
+  <br><br><br>
+  <label id="desc">Describe your experience*</label>
+  <br>
+  <select name="desc" id="descdown" required>
+	<option value="">(Select a Value)</option>
+	<option value="en">It was enlightening</option>
+	<option value="fm">I found out more about myself</option>
+	<option value="fn">I had a lot of fun</option>
+	<option value="fd">I enjoyed the food</option>
+	<option value="he">I feel much happier</option>
+	<option value="he">Other / None</option>
+  </select>
+  
+  <br><br><br>
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+
